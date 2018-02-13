@@ -12,10 +12,13 @@
     {% for activity in activities %}
       <div>
         <h1><a href="">{{ activity.activity_name }}</a></h1>
-        <p>Number of people: {{ activity.num_people }}</p>
-        <p>Space type: {{ activity.space_type }}</p>
+        <span>
+          Number of people: {{ activity.num_people }}
+          <br>
+          Space type: {{ activity.space_type }}
+        </span>
         <h2>Description:</h2>
-        <p>{{ activity.desc|linebreaksbr }}</p>
+        <p>{{ activity.activity_desc|linebreaksbr }}</p>
         <h2>Variations:</h2>
         <p>{{ activity.variations|linebreaksbr }}</p>
       </div>
