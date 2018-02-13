@@ -28,5 +28,5 @@ class Activity(models.Model):
 		choices = Space_Type_Choices, 
 		default= 'Room') 
 	## rating =
-	activity_desc = models.CharField(max_length = 1000)
-	variations = models.CharField(max_length = 250)
+	activity_desc = models.TextField(max_length = 1000)
+	variations = models.TextField(max_length = 250)
