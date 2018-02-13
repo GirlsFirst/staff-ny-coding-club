@@ -18,9 +18,9 @@
           Space type: {{ activity.space_type }}
         </span>
         <h2>Description:</h2>
-        <p>{{ activity.activity_desc|linebreaksbr }}</p>
+        <p>{{ activity.activity_desc|linebreaksbr|safe }}</p>
         <h2>Variations:</h2>
-        <p>{{ activity.variations|linebreaksbr }}</p>
+        <p>{{ activity.variations|linebreaksbr|safe }}</p>
       </div>
     {% endfor %}
   </body>
